@@ -1,0 +1,33 @@
+header {
+  background: transparent;
+  color: black;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block-start: 3.5rem;
+  padding-inline: 3rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 0 12px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+header ul li {
+  font-size: 1.125rem;
+  cursor: pointer;
+  font-weight: bold;
+}

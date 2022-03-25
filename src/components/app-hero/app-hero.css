@@ -1,0 +1,101 @@
+.hero {
+  background-image: url('assets/images/MG.jpg');
+  block-size: 200vh;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  padding-inline: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: 6.5rem;
+}
+
+h2 {
+  font-size: 5.5rem;
+  color: var(--bg);
+  inline-size: 59rem;
+  margin: 0;
+  position: relative;
+}
+
+h2:after {
+  background: #fdd130;
+  position: absolute;
+  content: '';
+  height: 2px;
+  right: calc(100% - 72px);
+  left: 0;
+  top: 0;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu ol {
+  list-style: none;
+  text-align: end;
+  padding: 0;
+  border-inline-end: 3px solid rgba(11, 29, 38, 0.5);
+  padding-inline-end: 1.5rem;
+  position: relative;
+}
+
+.menu ol:after {
+  background: #0b1d26;
+  position: absolute;
+  content: '';
+  height: 63px;
+  right: -3px;
+  left: 100%;
+  top: 0;
+}
+
+.menu ol li {
+  margin-block-start: 2.5rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1440px) {
+  .hero {
+    background-repeat: no-repeat;
+    background-size: contain;
+    block-size: 165vh;
+  }
+  h2 {
+    font-size: 4rem;
+    inline-size: 35rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    block-size: 120vh;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    block-size: 90vh;
+  }
+  h2 {
+    font-size: 2rem;
+    inline-size: 25rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero {
+    block-size: 80vh;
+  }
+  h2 {
+    font-size: 1rem;
+    inline-size: 20rem;
+  }
+}
