@@ -20,6 +20,8 @@ export namespace Components {
     }
     interface AppRoot {
     }
+    interface AppWrapperCards {
+    }
 }
 declare global {
     interface HTMLAppCardElement extends Components.AppCard, HTMLStencilElement {
@@ -58,6 +60,12 @@ declare global {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
     };
+    interface HTMLAppWrapperCardsElement extends Components.AppWrapperCards, HTMLStencilElement {
+    }
+    var HTMLAppWrapperCardsElement: {
+        prototype: HTMLAppWrapperCardsElement;
+        new (): HTMLAppWrapperCardsElement;
+    };
     interface HTMLElementTagNameMap {
         "app-card": HTMLAppCardElement;
         "app-header": HTMLAppHeaderElement;
@@ -65,6 +73,7 @@ declare global {
         "app-home": HTMLAppHomeElement;
         "app-profile": HTMLAppProfileElement;
         "app-root": HTMLAppRootElement;
+        "app-wrapper-cards": HTMLAppWrapperCardsElement;
     }
 }
 declare namespace LocalJSX {
@@ -81,6 +90,8 @@ declare namespace LocalJSX {
     }
     interface AppRoot {
     }
+    interface AppWrapperCards {
+    }
     interface IntrinsicElements {
         "app-card": AppCard;
         "app-header": AppHeader;
@@ -88,6 +99,7 @@ declare namespace LocalJSX {
         "app-home": AppHome;
         "app-profile": AppProfile;
         "app-root": AppRoot;
+        "app-wrapper-cards": AppWrapperCards;
     }
 }
 export { LocalJSX as JSX };
@@ -100,6 +112,7 @@ declare module "@stencil/core" {
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-profile": LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "app-wrapper-cards": LocalJSX.AppWrapperCards & JSXBase.HTMLAttributes<HTMLAppWrapperCardsElement>;
         }
     }
 }
