@@ -1,0 +1,36 @@
+.card {
+  display: flex;
+  gap: 7rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-content {
+  color: white;
+  inline-size: 50%;
+}
+
+.card-content h3 {
+  font-size: 4rem;
+  margin: 0;
+  margin-block-end: 1.5rem;
+}
+
+.card-content p {
+  font-size: 1.125rem;
+  margin: 0;
+  margin-block-end: 1.5rem;
+}
+
+.card-content a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.card-image {
+  inline-size: 35.375rem;
+}
+
+.card-image img {
+  inline-size: 100%;
+}

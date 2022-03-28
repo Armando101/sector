@@ -11,7 +11,7 @@ export class AppRoot {
       <div>
         <app-hero></app-hero>
         <main>
-          <app-card></app-card>
+          <app-wrapper-cards></app-wrapper-cards>
         </main>
       </div>
     );
